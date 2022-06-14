@@ -54,7 +54,8 @@ group :development, :test do
   gem 'bulma-rails', '~> 0.9.3'
   gem 'simple_form', '~> 5.1'
   gem 'gravatar_image_tag', '~> 1.2'
-  gem 'devise', '~> 4.8', '>= 4.8.1'
+  gem 'devise', '~> 4.8', '>= 4.8.1';
+  
 end
 
 group :development do
@@ -69,6 +70,7 @@ group :development do
   gem 'better_errors', '~> 2.9', '>= 2.9.1'
   gem 'guard', '~> 2.18'
   gem 'guard-livereload', '~> 2.5', '>= 2.5.2', require: false
+  gem 'rubocop-rails', require: false
 end
 
 group :test do

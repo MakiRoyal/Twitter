@@ -1,4 +1,4 @@
-require "application_system_test_case"
+require 'application_system_test_case"
 
 class TweetsTest < ApplicationSystemTestCase
   setup do
@@ -7,35 +7,35 @@ class TweetsTest < ApplicationSystemTestCase
 
   test "visiting the index" do
     visit tweets_url
-    assert_selector "h1", text: "Tweets"
+    assert_selector 'h1', text: 'Tweets'
   end
 
-  test "should create tweet" do
+  test 'should create tweet' do
     visit tweets_url
-    click_on "New tweet"
+    click_on 'New tweet'
 
-    fill_in "Tweet", with: @tweet.tweet
-    click_on "Create Tweet"
+    fill_in 'Tweet', with: @tweet.tweet
+    click_on 'Create Tweet'
 
-    assert_text "Tweet was successfully created"
-    click_on "Back"
+    assert_text 'Tweet was successfully created'
+    click_on 'Back'
   end
 
-  test "should update Tweet" do
+  test 'should update Tweet' do
     visit tweet_url(@tweet)
-    click_on "Edit this tweet", match: :first
+    click_on 'Edit this tweet', match: :first
 
-    fill_in "Tweet", with: @tweet.tweet
-    click_on "Update Tweet"
+    fill_in 'Tweet', with: @tweet.tweet
+    click_on 'Update Tweet'
 
-    assert_text "Tweet was successfully updated"
-    click_on "Back"
+    assert_text 'Tweet was successfully updated'
+    click_on 'Back'
   end
 
-  test "should destroy Tweet" do
+  test 'should destroy Tweet' do
     visit tweet_url(@tweet)
-    click_on "Destroy this tweet", match: :first
+    click_on 'Destroy this tweet', match: :first
 
-    assert_text "Tweet was successfully destroyed"
+    assert_text 'Tweet was successfully destroyed'
   end
 end
